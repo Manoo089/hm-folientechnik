@@ -1,0 +1,12 @@
+@import 'fonts';
+@import 'config';
+
+@import '../app/**/*.scss';
+@import '../partials/**/*.scss';
+@import '../components/**/*.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
