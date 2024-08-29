@@ -5,4 +5,19 @@
   --poppins-bold: 700;
 
   --squadaOne-regular: 400;
+
+  // *** COLORS *** //
+  --color-orange: #f88c02;
+  --color-darkgrey: #292828;
+  --color-grey: #403d3d;
+  --color-white: #ffffff;
+
+  // *** FONT COLORS *** //
+  --font-color-primary: var(--color-orange);
+  --font-color-primary: var(--color-white);
+
+  // *** BACKGROUND COLORS *** //
+  --bg-color-primary: var(--color-orange);
+  --bg-color-secondary: var(--color-darkgrey);
+  --bg-color-third: var(--color-grey);
 }
