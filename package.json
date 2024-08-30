@@ -9,20 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "14.2.7",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.7"
+    "framer-motion": "^11.3.31"
   },
   "devDependencies": {
-    "sass-loader": "^16.0.0",
-    "sass": "^1.77.8",
     "@svgr/webpack": "^8.1.0",
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.7",
-    "node-sass-glob-importer": "^5.3.3"
+    "node-sass-glob-importer": "^5.3.3",
+    "sass": "^1.77.8",
+    "sass-loader": "^16.0.0",
+    "typescript": "^5"
   }
 }
