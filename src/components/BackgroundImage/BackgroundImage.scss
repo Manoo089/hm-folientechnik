@@ -1,0 +1,34 @@
+.BackgroundImage {
+  &--image {
+    &-header {
+      background-image: url('../../../public/Image.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      overflow: clip;
+
+      @media screen and (max-width: 400px) {
+        
+      }
+    }
+
+
+    &-wrapping {
+      background-image: url('/public/Image.png');
+    }
+
+    &-tinting {
+      background-image: url('/public/Image.png');
+    }
+
+    &-protect {
+      background-image: url('/public/Image.png');
+    }
+  }
+}

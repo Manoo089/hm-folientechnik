@@ -1,0 +1,31 @@
+.Hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+
+  &__bar {
+    width: 100%;
+    height: 4px;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 99;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  &--isOpen {
+    .Hamburger__bar:nth-child(1) {
+      transform: translateY(18px) rotate(45deg);
+    }
+    .Hamburger__bar:nth-child(2) {
+      opacity: 0;
+    }
+    .Hamburger__bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+}

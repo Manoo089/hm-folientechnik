@@ -1,23 +1,24 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
-export const useScroll = (threshold = 100) => {
-  const [isScrolled, setIsScrolled] = useState(false);
+export interface Props {
+  isOpen: boolean;
+  setIsOpen: (bool: boolean) => void;
+}
 
+export const useScroll = (isOpen: any, setIsOpen: any) => {
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > threshold) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
+      // Menü schließen, wenn es offen ist
+      if (isOpen) {
+        setIsOpen(false);
       }
     };
-
+    // Scroll-Eventlistener hinzufügen
     window.addEventListener('scroll', handleScroll);
 
+    // Eventlistener entfernen, wenn die Komponente unmountet wird
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [threshold]);
-
-  return isScrolled;
+  }, [isOpen, setIsOpen]); // Abhängigkeit von isMenuOpen, damit es bei Änderungen reagiert
 };

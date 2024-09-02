@@ -1,0 +1,56 @@
+.HeaderBar {
+  width: 100%;
+  height: auto;
+  padding: 0 30px 0 30px; // TODO Padding responsive
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  -webkit-box-shadow: 0px 10px 30px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 30px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 30px -12px rgba(0, 0, 0, 0.75);
+
+  background-color: var(--bg-color-primary);
+
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 400px) {
+    padding: 0 10px 0 10px;
+  }
+
+  &__instagram {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    cursor: pointer;
+
+    @media screen and (max-width: 400px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    top: 15px;
+    width: 355px;
+    height: 204px;
+
+    @media screen and (max-width: 400px) {
+      width: 140px;
+      height: 102px;
+    }
+  }
+
+  &__svg > path:nth-child(1) {
+    opacity: 0;
+  }
+
+  &__svg > path:nth-child(2) {
+    color: rgba(250, 250, 250, 0.5);
+  }
+
+  &__svg > path:nth-child(3) {
+    color: rgba(250, 250, 250, 0.5);
+  }
+}

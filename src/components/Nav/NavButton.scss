@@ -1,0 +1,27 @@
+.NavButton {
+  appearance: unset;
+  width: 100%;
+  font-family: 'Poppins', 'sans-serif';
+  font-weight: var(--poppins-semiBold);
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  text-shadow: -1px -1px 6px rgba(250, 250, 250, 0.2);
+  color: black;
+  background-color: transparent;
+  border: 0;
+  border-radius: 2px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: box-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
+
+  &:hover {
+    color: var(--font-color-primary);
+    box-shadow: inset 20rem 0 0 0 var(--bg-color-primary);
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+    text-shadow: -1px -1px 6px rgba(0, 0, 0, 0.4);
+    text-align: right;
+    transition: text-align 1s ease-in;
+  }
+}

@@ -1,5 +1,11 @@
 .Container {
   width: 100%;
+  min-height: 88.3vh;
+  margin-top: 110px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &--bgColor {
     &-orange {
