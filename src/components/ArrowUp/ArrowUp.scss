@@ -1,0 +1,25 @@
+.ArrowUp {
+  $wrapper-width-height: 45px;
+  $svg-width-height: 50%;
+
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  background-color: var(--bg-color-primary);
+  padding: 5px 10px;
+  border-radius: 3px;
+
+  width: $wrapper-width-height;
+  height: $wrapper-width-height;
+  z-index: 99;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > svg {
+    width: $svg-width-height;
+    height: $svg-width-height;
+  }
+}

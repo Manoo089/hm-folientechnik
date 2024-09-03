@@ -9,10 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^11.3.31",
     "next": "14.2.7",
     "react": "^18",
     "react-dom": "^18",
-    "framer-motion": "^11.3.31"
+    "resize-observer-polyfill": "^1.5.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",

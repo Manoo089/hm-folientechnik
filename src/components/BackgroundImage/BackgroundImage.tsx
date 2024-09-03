@@ -1,6 +1,6 @@
 import cn from '@/libs/class-name';
 
-type Image = 'header' | 'wrapping' | 'tinting' | 'protect';
+type Image = 'header' | 'about' | 'wrapping' | 'tinting' | 'protect';
 
 export interface Props {
   image: Image;

@@ -1,5 +1,6 @@
 @import 'fonts';
 @import 'config';
+@import 'mixins';
 
 @import '../app/**/*.scss';
 @import '../partials/**/*.scss';
@@ -18,8 +19,17 @@ body {
   font-family: 'Poppins', 'sans-serif';
   background-color: black;
   color: var(--font-color-primary);
-  scroll-behavior: smooth;
   overflow-x: hidden;
+  overscroll-behavior-y: none;
+  user-select: none;
+  touch-action: pan-x;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::-webkit-scrollbar {
@@ -33,4 +43,8 @@ body {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: var(--color-darkgrey);
+}
+
+a {
+  color: var(--font-color-primary);
 }

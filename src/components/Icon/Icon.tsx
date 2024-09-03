@@ -1,5 +1,6 @@
-import cn from '@/libs/class-name';
 import { motion } from 'framer-motion';
+
+import cn from '@/libs/class-name';
 
 export interface Props {
   animationObject: any;

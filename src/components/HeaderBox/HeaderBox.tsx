@@ -1,8 +1,9 @@
 'use client';
 
-import { ANIMATION_FADE_IN } from '@/libs/animations';
-import cn from '@/libs/class-name';
 import { motion } from 'framer-motion';
+
+import cn from '@/libs/class-name';
+import { ANIMATION_FADE_IN } from '@/libs/animations';
 
 export interface Props {}
 

@@ -1,0 +1,40 @@
+.Content {
+  max-width: 70ch;
+  align-self: center;
+
+  &__heading {
+    @include heading;
+
+    margin: 0 0 6px 0;
+  }
+
+  &__sub-heading {
+    @include sub-heading;
+
+    margin: 0 0;
+  }
+
+  &__text {
+    @include paragraph;
+
+    margin: 10px 0 14px 0;
+  }
+
+  &__link {
+    @include text-hyperlink;
+
+    &--a {
+      text-decoration: underline;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &--centered {
+    max-width: 100%;
+    text-align: center;
+  }
+}

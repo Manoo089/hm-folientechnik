@@ -1,5 +1,6 @@
 :root {
   // *** FONT FAMILIES *** //
+  --poppins-regular: 400;
   --poppins-medium: 500;
   --poppins-semiBold: 600;
   --poppins-bold: 700;
@@ -13,8 +14,8 @@
   --color-white: #ffffff;
 
   // *** FONT COLORS *** //
-  --font-color-primary: var(--color-orange);
   --font-color-primary: var(--color-white);
+  --font-color-secondary: var(--color-orange);
 
   // *** BACKGROUND COLORS *** //
   --bg-color-primary: var(--color-orange);

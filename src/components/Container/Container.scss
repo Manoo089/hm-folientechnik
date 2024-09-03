@@ -1,11 +1,7 @@
 .Container {
   width: 100%;
-  min-height: 88.3vh;
-  margin-top: 110px;
+  min-height: 92vh;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   &--bgColor {
     &-orange {
@@ -19,5 +15,18 @@
     &-bright {
       background-color: var(--bg-color-third);
     }
+  }
+
+  &--marginTop {
+    margin-top: 110px;
+  }
+
+  &--paddingTopBottom {
+    padding: 80px 0 80px 0;
+  }
+
+  &--verticalAlignCenter {
+    display: flex;
+    align-items: center;
   }
 }

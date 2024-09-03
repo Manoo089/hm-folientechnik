@@ -1,8 +1,9 @@
 'use client';
 
-import cn from '@/libs/class-name';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+
+import cn from '@/libs/class-name';
 import { useScrollWithThreshold } from '@/hooks/useScrollWithThreshold';
 import { useScroll } from '@/hooks/useScroll';
 import {
