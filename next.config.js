@@ -2,7 +2,11 @@ const globImporter = require('node-sass-glob-importer');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  distDir: '/httpdocs/out',
   output: 'export',
+  images: {
+    unoptimized: true,
+  },
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) => rule.test?.test?.('.svg'));
