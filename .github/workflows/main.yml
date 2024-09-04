@@ -1,4 +1,4 @@
-name: Build and Cache
+name: Build and Deploy
 
 on:
   push:
@@ -30,3 +30,9 @@ jobs:
     - run: npm install
 
     - run: npm run build
+
+    - name: Trigger Webhook for Deployment
+      run: |
+        curl -X POST -H "Content-Type: application/json" \
+        -H "X-Hub-Signature-256: sha256=$(echo -n '$payload' | openssl dgst -sha256 -hmac 'your_secret_key')" \
+        -d '{}' https://yourdomain.com/webhook.php
