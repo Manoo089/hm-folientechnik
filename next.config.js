@@ -2,7 +2,7 @@ const globImporter = require('node-sass-glob-importer');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir: '/httpdocs/out',
+  distDir: process.env.NODE_ENV !== 'production' ? '.next' : 'httpdocs',
   output: 'export',
   images: {
     unoptimized: true,

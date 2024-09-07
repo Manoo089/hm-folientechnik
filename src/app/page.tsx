@@ -46,6 +46,7 @@ export default function Home() {
                 width={400}
                 height={600}
                 style={{ boxShadow: '0 0 15px rgba(0, 0, 0, 0.3)', borderRadius: '5px' }}
+                priority
               />
             </Grid>
           </Section>

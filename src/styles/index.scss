@@ -1,6 +1,7 @@
-@import 'fonts';
 @import 'config';
 @import 'mixins';
+@import 'media';
+@import 'fonts';
 
 @import '../app/**/*.scss';
 @import '../partials/**/*.scss';
@@ -14,18 +15,14 @@
 
 html,
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', 'sans-serif';
   background-color: black;
   color: var(--font-color-primary);
   overflow-x: hidden;
-  overscroll-behavior-y: none;
-  user-select: none;
-  touch-action: pan-x;
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  overflow-y: auto;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

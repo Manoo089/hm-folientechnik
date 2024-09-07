@@ -25,5 +25,9 @@
       content: 'About';
       -webkit-text-stroke: 1.1px var(--bg-color-primary);
     }
+
+    @include media("tablet") {
+      left: -255px;
+    }
   }
 }

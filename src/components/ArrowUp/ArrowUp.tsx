@@ -11,7 +11,7 @@ export default function ArrowUp() {
   const { scrollY } = useScroll();
 
   useEffect(() => {
-    return scrollY.onChange((latest) => {
+    return scrollY.on("change", (latest) => {
       setIsVisible(latest > 100);
     });
   }, [scrollY]);

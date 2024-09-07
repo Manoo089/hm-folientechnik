@@ -1,8 +1,14 @@
 import type { AnimationProps } from 'framer-motion';
 
 export const ANIMATION_SCROLL_LOGO: AnimationProps = {
+  initial: { scale: 1, top: 15 },
+  animate: { scale: 0.5, top: -55 },
+  transition: { duration: 0.3 },
+};
+
+export const ANIMATION_SCROLL_LOGO_TABLET: AnimationProps = {
   initial: { scale: 1, top: 0 },
-  animate: { scale: 0.5, top: -40 },
+  animate: { scale: 0.5, top: 40 },
   transition: { duration: 0.3 },
 };
 
@@ -16,6 +22,7 @@ export const ANIMATION_MENU_TRANSLATE: AnimationProps = {
   initial: { translateX: '150%' },
   animate: { translateX: '0%' },
   transition: { duration: 0.3 },
+  exit: { translateX: '150%' },
 };
 
 export const ANIMATION_HEADERBAR_BACKGROUND: AnimationProps = {

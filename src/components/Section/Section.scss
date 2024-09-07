@@ -3,5 +3,10 @@
   width: 65%;
   height: 100%;
   margin: 0 auto;
-  scroll-snap-align: center;
+
+  @include media("tablet") {
+    width: 100%;
+    padding: 0 100px;
+    margin: 0;
+  }
 }

@@ -34,11 +34,12 @@
     position: relative;
     top: 15px;
     width: 355px;
-    height: 204px;
+    height: 254px;
 
-    @media screen and (max-width: 400px) {
-      width: 140px;
-      height: 102px;
+    @include media('tablet') {
+      top: 30px;
+      width: 305px;
+      height: 154px;
     }
   }
 

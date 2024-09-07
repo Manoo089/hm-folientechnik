@@ -16,12 +16,12 @@ export interface Props {
 
 export default function Content({ children, centered, heading, subHeading, text, link }: Props) {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const isInView = useInView(scrollRef, { once: true, amount: 0.7 });
+  const isInView = useInView(scrollRef, { once: true, amount: 1 });
   return (
     <motion.div
       className={cn('Content', [{ centered }])}
       ref={scrollRef}
-      style={{ opacity: isInView ? 1 : 0, transition: 'opacity 300ms 300ms' }}
+      style={{ opacity: isInView ? 1 : 0, transition: 'opacity 175ms' }}
     >
       <h2 className="Content__heading">{heading}</h2>
       <h3 className="Content__sub-heading">{subHeading}</h3>

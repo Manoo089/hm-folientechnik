@@ -19,11 +19,13 @@ import Firmenlogo from '../../resources/icons/Firmenlogo_Folie_SVG_splitted.svg'
 import Icon from '../Icon/Icon';
 import Hamburger from '../Hamburger/Hamburger';
 import Nav from '../Nav/Nav';
+import { useBreakpoints } from '@/hooks/useBreakpoints';
 
 export default function HeaderBar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const isScrolledLogo = useScrollWithThreshold(100);
   const isScrolled = useScroll(isOpen, setIsOpen);
+  const isTablet = useBreakpoints();
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const { initial, animate, transition } = ANIMATION_HEADERBAR_BACKGROUND;
