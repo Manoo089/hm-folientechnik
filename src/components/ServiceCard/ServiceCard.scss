@@ -1,0 +1,58 @@
+.ServiceCard {
+  flex: 0 0 (100rem / 5);
+  position: relative;
+  height: 33.125rem;
+  overflow: hidden;
+  box-shadow: 0 0 1rem transparent;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+
+  &__img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    color: white;
+    padding: 3rem 1rem 0 1rem;
+    text-shadow: 0 0 0.125rem black;
+
+    transform: translate(0, calc(100% - 7.25rem));
+    transition: transform 0.3s ease-in-out;
+
+    .ServiceCard:hover & {
+      transform: translate(0, 0);
+      background-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.35) 20%);
+    }
+
+    &-heading {
+      font-weight: var(--poppins-bold);
+      letter-spacing: 0.025rem;
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    &-desc {
+      font-size: 1rem;
+      padding: 0.9rem 0;
+      background-image: linear-gradient(90deg, var(--bg-color-primary) 60%, transparent 60%);
+      background-position-y: top;
+      background-repeat: no-repeat;
+      background-size: 100% 0.125rem;
+    }
+
+    &-discover-more {
+        letter-spacing: 0.025rem;
+    }
+  }
+}

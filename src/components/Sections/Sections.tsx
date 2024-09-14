@@ -19,9 +19,13 @@ export default function Sections({ text }: Props) {
   const y = useParallax(scrollYProgress, 400);
   return (
     <div className={cn('Sections', [])} ref={ref}>
-      <motion.h2 className="Sections__text" style={{ y: isInView ? y : 0, opacity: isInView ? 1 : 0, rotate: '90deg' }}>
+      <motion.div
+        className="Sections__text"
+        data-before-content={text}
+        style={{ y: isInView ? y : 0, opacity: isInView ? 1 : 0, rotate: '90deg' }}
+      >
         {text}
-      </motion.h2>
+      </motion.div>
     </div>
   );
 }

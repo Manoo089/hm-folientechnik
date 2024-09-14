@@ -1,29 +1,31 @@
 .Sections {
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  // scroll-snap-align: center;
   perspective: 500px;
   
   &__text {
+    display: inline-block;
+    // overflow: hidden;
     margin: 0;
-    color: var(--color-darkgrey);
+    color: transparent;
     top: -20px;
-    left: -150px;
+    left: -100px;
+    height: 100%;
     // left: calc(10% - 150px);
     font-size: 100px;
     font-weight: 700;
     letter-spacing: 50px;
     position: absolute;
     text-transform: uppercase;
-
+    white-space: nowrap;
+    
     &::before {
+      display: inline-block;
+      // overflow: hidden;
       filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
       position: absolute;
-      content: 'About';
+      content: attr(data-before-content);
       -webkit-text-stroke: 1.1px var(--bg-color-primary);
+      white-space: nowrap;
     }
 
     @include media("tablet") {

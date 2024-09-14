@@ -12,6 +12,8 @@ import Content from '@/components/Content/Content';
 import ArrowUp from '@/components/ArrowUp/ArrowUp';
 import ScrollPoint from '@/components/ScrollPoint/ScrollPoint';
 import Sections from '@/components/Sections/Sections';
+import ServiceCard from '@/components/ServiceCard/ServiceCard';
+import Cards from '@/components/Cards/Cards';
 
 export default function Home() {
   return (
@@ -29,7 +31,7 @@ export default function Home() {
 
       <main>
         <Container bgColor="dark" verticalAlignCenter paddingTopBottom>
-          <Sections text='about' />
+          <Sections text="about" />
           <ScrollPoint id="about" />
           <Section>
             <Grid>
@@ -52,10 +54,31 @@ export default function Home() {
           </Section>
         </Container>
 
-        <Container bgColor="bright" paddingTopBottom>
+        <Container bgColor="bright" verticalAlignCenter paddingTopBottom>
+          <Sections text="services" />
           <ScrollPoint id="services" />
           <Section>
             <Content centered heading="Unsere Services" subHeading="Fachgerechte Lösungen für Ihr Fahrzeug" />
+            <Cards>
+              <ServiceCard
+                src="/ServiceWrapping.png"
+                alt=""
+                heading="Car Wrapping"
+                desc="Car Wrapping, also bekannt als Fahrzeugfolierung, bietet eine Vielzahl von Vorteilen gegenüber traditioneller Lackierung. Lesen Sie die Vorteile die Car Wrapping zu einer attraktiven Option für Fahrzeugbesitzer machen, die ihr Auto individualisieren oder schützen möchten."
+              />
+              <ServiceCard
+                src="/ServiceWrapping.png"
+                alt=""
+                heading="Scheibentönung"
+                desc="Scheibentönung, auch als Fensterfolie oder Tönungsfolie bekannt, bietet zahlreiche Vorteile für Autos und Gebäude. Insgesamt bieten Scheibentönungen eine Kombination aus Schutz, Komfort, Ästhetik und Energieeffizienz."
+              />
+              <ServiceCard
+                src="/ServiceWrapping.png"
+                alt=""
+                heading="Lackschutzfolierung"
+                desc="Lackschutzfolien, auch bekannt als Paint Protection Films (PPF), sind eine innovative Methode, um den Lack eines Fahrzeugs vor alltäglichen Gefahren und Umwelteinflüssen zu schützen. Diese transparenten, widerstandsfähigen Folien werden auf die Außenflächen des Autos aufgebracht und bieten eine unsichtbare Barriere gegen Kratzer, Steinschläge, UV-Strahlung und andere potenzielle Schäden."
+              />
+            </Cards>
           </Section>
         </Container>
 
